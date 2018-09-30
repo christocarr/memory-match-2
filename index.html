@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+		<h1>Memory Match</h1>
+		<div class="stat-container">
+			<div class="star-rating">Rating: 
+				<img class="star" src="images/Gold_Star.svg" alt="star-rating" width="25px">
+				<img class="star" src="images/Gold_Star.svg" alt="star-rating" width="25px">
+				<img class="star" src="images/Gold_Star.svg" alt="star-rating" width="25px">
+			</div>
+			<div class="counter">Moves: </div>
+			<div ><img class="reset" src="images/ic_replay_black_24px.svg" width="40px" alt="reset game"></div>
+		</div>
+		<main class="board">
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="clock" src="images/ic_access_alarm_black_24px.svg" alt="alarm icon" width="50px"></figure>
+			</div>
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="clock" src="images/ic_access_alarm_black_24px.svg" alt="alarm icon" width="50px"></figure>
+			</div>		
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="camera" src="images/ic_camera_black_24px.svg" alt="camera icon" width="50px"></figure>
+			</div>
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="camera" src="images/ic_camera_black_24px.svg" alt="camera icon" width="50px"></figure>
+			</div>
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="email" src="images/ic_email_black_24px.svg" alt="email icon" width="50px"></figure>
+			</div>
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="email" src="images/ic_email_black_24px.svg" alt="email icon" width="50px"></figure>
+			</div>		
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="settings" src="images/ic_settings_black_24px.svg" alt="settings icon" width="50px"></figure>
+			</div>
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="settings" src="images/ic_settings_black_24px.svg" alt="settings icon" width="50px"></figure>
+			</div>
+				<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="phone" src="images/ic_local_phone_black_24px.svg" alt="phone icon" width="50px"></figure>
+			</div>
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="phone" src="images/ic_local_phone_black_24px.svg" alt="phone icon"  width="50px"></figure>
+			</div>		
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="notification" src="images/ic_notifications_black_24px.svg" alt="notification icon" width="50px"></figure>
+			</div>
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="notification" src="images/ic_notifications_black_24px.svg" alt="notification icon" width="50px"></figure>
+			</div>
+				<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="clip" src="images/ic_attach_file_black_24px.svg" alt="clip icon" width="50px"></figure>
+			</div>
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="clip" src="images/ic_attach_file_black_24px.svg" alt="clip icon" width="50px"></figure>
+			</div>		
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="folder" src="images/ic_folder_black_24px.svg" alt="folder icon" width="50px"></figure>
+			</div>
+			<div class="card">
+				<figure class="front"></figure>
+				<figure class="back"><img class="folder" src="images/ic_folder_black_24px.svg" alt="folder icon" width="50px"></figure>
+			</div>
+		</main>
+		<div class="modal" id="modal">
+			<div class="modal-close" id="modalClose">&times;</div>
+			<h2 class="modal-heading">Congratulations</h2>
+			<p class="timer"></p>
+			<p class="moves"></p>
+			<p class="rating">Your star rating: </p>
+			<div class="button-container">
+				<button class="play-again" id="playAgain">Play Again?</button>
+			</div>
+		</div>
+		<div class="modal-overlay" id="modalOverlay"></div>
+  </body>
+
+</html>
