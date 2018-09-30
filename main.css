@@ -36,7 +36,9 @@ h1 {
   height: 45px;
   border: 1px solid darkgray;
   transform-style: preserve-3d;
-  transition: transform 0.9s;
+  transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -webkit-transition: all 0.9s;
 }
 
 figure {
@@ -55,10 +57,14 @@ figure {
 
 .back {
   transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .flipped {
   transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .clock,
