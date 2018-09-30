@@ -36,6 +36,7 @@ h1 {
   height: 45px;
   border: 1px solid darkgray;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: all 0.9s;
   -moz-transition: all 0.9s;
   -webkit-transition: all 0.9s;
@@ -49,10 +50,14 @@ figure {
   height: 100%;
   margin: 0;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .front {
   background-color: darkcyan;
+  transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 
 .back {
